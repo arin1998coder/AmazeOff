@@ -8,8 +8,8 @@ import java.util.List;
 @Service
 public class OrderService {
 
-    @Autowired
-    OrderRepository repository;
+
+    OrderRepository repository = new OrderRepository();
 
     //decrement the count of num of orders for a parter by 1
     public void decrementNumOfOrdersCountOfAPartner(String partnerId){
